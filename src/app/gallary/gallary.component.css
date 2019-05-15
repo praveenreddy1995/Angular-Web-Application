@@ -1,0 +1,15 @@
+.gallery_container{
+    margin-top: 50px;
+}
+.imgsrow{
+    margin-bottom: 30px;
+    display:flex;
+}
+.mainHeading{
+    padding-left: 25px;
+    color: rgb(0, 153, 255);
+    margin-bottom: 20px;
+}
+ngx-gallery{
+    margin-right: 50px;
+}

@@ -1,0 +1,55 @@
+.mainHeading{
+    color:rgb(0, 153, 255);
+    padding: 20px;
+}
+.float-right{
+    text-align: right;
+}
+.commentsBtn{
+    margin-top: 20px;
+}
+.commentsBtn button{
+    background-image: linear-gradient(to right, #30c0a5 , #7cadd0);
+}
+.mainImg{
+    text-align: center;
+}
+.w-100 {
+    width: 50%!important;
+    margin: 0 auto;
+    height: 400px;
+}
+.banking{
+    width: 60%!important;
+}
+.carousel-caption{
+     right: 0; 
+     left: 0; 
+    color: #ec3910;
+    text-align: right;
+}
+.serviceHeading{
+    text-align: center;
+    margin: 50px 0px;
+    color: #7cadd0
+}
+.services .col-sm-3 img{
+    margin-top: 30px;
+    width: 120px;
+    height: 120px;
+}
+.services h4{
+    margin-top: 20px;
+}
+.services p{
+    color:#afabab;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.projects{
+    padding: 10px 20px;
+    top:50px;
+}
+.projects li{
+    padding: 5px 0;
+}

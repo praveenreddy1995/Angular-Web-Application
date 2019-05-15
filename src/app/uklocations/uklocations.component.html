@@ -1,0 +1,184 @@
+ <div class="container ">
+    <div class="row">
+      <div class="col-sm-8 team_container">
+          <label class="col-sm-12 login-text">Management Team</label>
+           
+          <div class="photo-main-container clearfix row">
+                    <div class="col-sm-6 founder-left servicesimg">
+                      <div class="photo_container">
+                        <a href="#" onclick="openPopup9()"><img src="../../assets/imgs/lion.jpg"></a>
+                      </div>
+                      <h4 class="uppercase pad">lion</h4>
+                      <p>Founder &amp; Chief Executive Officer</p>
+                    </div>
+                    <div class="col-sm-6 founder-right servicesimg">
+                      <div class="photo_container">
+                        <a href="#" onclick="openPopup()"><img src="../../assets/imgs/elephent.png"></a>
+                      </div>
+                      <h4 class="uppercase pad">elephent</h4>
+                      <p>Co-Founder and Board Member</p>
+                    </div>
+            </div>
+                    <div class="photo-main-container clearfix row">
+                          <div class="col-sm-4 servicesimg">
+                            <div class="photo_container">
+                              <a href="#" onclick="openPopup4()"><img src="../../assets/imgs/horse.png"></a>
+                            </div>
+                            <h4 class="uppercase pad">horse</h4>
+                            <p>Sr.Vice President - Solutions and Services</p>
+                          </div>
+                          <div class="col-sm-4 servicesimg">
+                            <div class="photo_container ">
+                              <a href="#" onclick="openPopup3()"><img src="../../assets/imgs/cow.png"></a>
+                            </div>
+                            <h4 class="uppercase pad">Cow</h4>
+                            <p>Sr.Vice President</p>
+                          </div>
+                          <div class="col-sm-4 servicesimg">
+                            <div class="photo_container ">
+                              <a href="#" onclick="openPopup2()"><img src="../../assets/imgs/dog.png"></a>
+                            </div>
+                            <h4 class="uppercase pad">dog</h4>
+                            <p>Sr.Vice President -&nbsp;Sales &amp; Marketing</p>
+                          </div>
+                    </div>
+            <div class="photo-main-container">
+              <div class="col-sm-12 servicesimg">
+                <div class="photo_container">
+                  <a href="#" onclick="openPopup10()"><img src="../../assets/imgs/cat.jpg"></a>
+                </div>
+                <h4 class="uppercase pad">cat</h4>
+                <p>Legal Counsel</p>
+              </div>
+            </div>
+
+      </div>
+      <div class="col-sm-4 form-container">
+      <div class="col-sm-12" *ngIf="mngmtLoginDiv">
+          <div class="login-box">
+             <label class="col-sm-12 login-text">Admin Login</label>
+             <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
+                <div class="form-group">
+                   <label class="">User Name</label><span>*</span>
+                   <input class="form-control" type="text" placeholder="Name" required name="Username" formControlName="uname">
+                </div>
+                <div class="form-group">
+                   <label class="">Password</label><span>*</span>
+                   <input class="form-control" type="password" placeholder="Password"  name="Password" formControlName="passwd">
+                </div>
+                <div id="error"></div>
+                <div class="buttons col-sm-12">
+                    <div class="form-group button  col-sm-4">
+                        <input   [disabled]="!formdata.valid" value="Submit" class="btn btn-blue form-control login-btn" type="submit" name="Submit">
+                    </div>
+                  </div>
+             </form>
+          </div>
+          <p>Please Login to Update Employee Detailes.....</p>
+       </div>
+       <div class="col-sm-12" *ngIf="updateempDiv">
+          <div class="login-box">
+             <label class="col-sm-12 login-text">Update employee data </label>
+             <form [formGroup]="employeeForm" (ngSubmit) = "Formsubmit(employeeForm.value)" >
+                <div class="form-group">
+                   <label class="">Emp ID</label><span>*</span>
+                   <input class="form-control" type="text" placeholder="Emp id" required name="Username" formControlName="empid" >
+                   <label *ngIf="employeeForm.get('empid').invalid && processValidation" [ngClass] = "'error'"> Emp id required </label>
+                </div>
+                   <!-- <div *ngIf="employeeForm.controls['empid'].invalid && (employeeForm.controls['empid'].dirty || employeeForm.controls['empid'].touched)" class="alert alert-danger">
+                      <div *ngIf="employeeForm.controls['empid'].errors.required">
+                       First Name is required.
+                      </div>
+                   </div> -->
+                   <div class="form-group">
+                    <label class="">First Name</label><span>*</span>
+                    <input class="form-control" type="text" placeholder="First Name" required name="Username" formControlName="Fname" >
+                   <label *ngIf="employeeForm.get('Fname').invalid && processValidation" [ngClass] = "'error'"> First Name required </label>
+
+                 </div>
+                    <!-- <div *ngIf="employeeForm.controls['Fname'].invalid && (employeeForm.controls['Fname'].dirty || employeeForm.controls['Fname'].touched)" class="alert alert-danger">
+                       <div *ngIf="employeeForm.controls['Fname'].errors.required">
+                        First Name is required.
+                       </div>
+                    </div> -->
+                <div class="form-group">
+                    <label class="">Last Name</label><span>*</span>
+                    <input class="form-control" type="text" placeholder="Last Name" required name="Username" formControlName="Lname">
+                   <label *ngIf="employeeForm.get('Lname').invalid && processValidation" [ngClass] = "'error'"> Last Name required </label>
+
+                 </div>
+                 <!-- <div *ngIf="employeeForm.controls['Lname'].invalid && (employeeForm.controls['Lname'].dirty || employeeForm.controls['Lname'].touched)" class="alert alert-danger">
+                      <div *ngIf="employeeForm.controls['Lname'].errors.required">
+                     Last Name is required.
+                      </div>
+                   </div> -->
+                 <div class="form-group">
+                    <label class="">Email</label><span>*</span>
+                    <input class="form-control" type="email" placeholder="Email" required name="Username" formControlName="email">
+                   <!-- <label *ngIf="employeeForm.get('email').invalid && processValidation" [ngClass] = "'error'">Email required </label> -->
+
+                 </div> 
+                 <!-- <div class="alert alert-danger"
+                   *ngIf="employeeForm.controls.email.errors?.MatchPassword">please fill the valid email address</div> -->
+                  <div *ngIf="employeeForm.controls['email'].invalid && (employeeForm.controls['email'].dirty || employeeForm.controls['email'].touched)" class="alert alert-danger">
+                      <div *ngIf="employeeForm.controls['email'].errors.pattern">
+                   Please fill the valid email address
+                      </div>
+                   </div> 
+
+                 <div class="form-group">
+                    <label class="">Phone</label><span>*</span>
+                    <input class="form-control" type="text" placeholder="Phone" required name="Username" formControlName="phone">
+                   <label *ngIf="employeeForm.get('phone').invalid && processValidation" [ngClass] = "'error'"> Phone Number required </label>
+
+                 </div>
+                 <!-- <div *ngIf="employeeForm.controls['phone'].invalid && (employeeForm.controls['phone'].dirty || employeeForm.controls['phone'].touched)" class="alert alert-danger">
+                      <div *ngIf="employeeForm.controls['phone'].errors.required">
+                   Phone number is required.
+                      </div>
+                   </div> -->
+                  <div class="buttons col-sm-12">
+                    <button *ngIf="!articleIdToUpdate" type="submit" class="btn btn-primary">CREATE</button>  
+                    <button *ngIf="articleIdToUpdate" type="submit" class="btn btn-primary">UPDATE</button>  
+                    <button (click)="backToCreateArticle()" *ngIf="articleIdToUpdate" type="submit" class="btn btn-primary gobackBTN">Go Back</button>  
+              </div>
+             </form><br/>
+             <div *ngIf="statusCode; else processing">
+              <div *ngIf="statusCode === 201" [ngClass] = "'success'">
+                 Employee data added successfully.
+              </div>   
+              <div *ngIf="statusCode === 409" [ngClass] = "'success'">
+                Employee data already exists.
+              </div>   	
+              <div *ngIf="statusCode === 200" [ngClass] = "'success'">
+                Employee data updated successfully.
+              </div>   	      
+              <div *ngIf="statusCode === 204" [ngClass] = "'success'">
+                Employee data deleted successfully.
+              </div>   	   
+              <div *ngIf="statusCode === 500" [ngClass] = "'error'">
+                   Internal Server Error.
+              </div>	
+            </div>
+            <ng-template #processing>
+              <img *ngIf="requestProcessing" src="../../assets/imgs/loading.jpg">
+             </ng-template>
+             
+          </div>
+         
+       </div>
+      
+       </div>
+      </div>
+      <div *ngIf="showDetailes">
+      <h3>Employee Details</h3>
+      <table  class="table table-bordered">
+        <tr><th> Empid</th> <th>FirstName</th><th>LastName</th><th>Phone</th><th>Email</th><th>Edit</th><th>Delete</th></tr>
+        <tr *ngFor="let article of allArticles" >
+             <td>{{article.empid}}</td> <td>{{article.Fname}}</td><td>{{article.Lname}}</td> <td>{{article.email}}</td> <td>{{article.phone}}</td>
+        <td><button type="button" (click)="loadArticleToEdit(article.id)">Edit</button> 
+            <td><button type="button" (click)="deleteArticle(article.id)">Delete</button> </td> 
+        </tr>
+      </table> 
+    </div>
+ </div> 

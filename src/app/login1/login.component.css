@@ -1,0 +1,32 @@
+.login-btn {
+    background-color: #288aa5;
+    color:#fff;
+    border-radius: 50px;
+    width: 40%;
+}
+.form-container{
+    margin: 0 auto;
+     float: none; 
+     padding: 50px 0px 50px 50px;  
+}
+.login-text {
+    text-align: center; 
+    font-size: 30px;
+    color: darksalmon;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.login-container{
+    background-color: #fafcfb;
+    width: 100%;
+}
+span{
+    color: red;
+    font-size: 15px;
+    padding-left: 5px;
+}
+p{
+    color: #0ba0dc;
+    cursor: pointer;
+    margin-bottom: 0;
+}

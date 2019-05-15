@@ -1,0 +1,49 @@
+h5{
+    color: black;
+}
+ .footer{
+     margin-top: 10px;
+     padding: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    color: white;
+    background-color: #a1d3f5;
+    background: linear-gradient(20deg,rgb(177, 177, 199),rgb(155, 131, 201),rgb(42, 114, 197)); /*Change colors as you want*/
+    background-size: 1000% 1000% !important;
+    -webkit-animation: changeColors 30s ease infinite;
+    -moz-animation: changeColors 30s ease infinite;
+    -o-animation: changeColors 30s ease infinite;
+    animation: changeColors 30s ease infinite;
+}
+.text-center{
+    text-align: center;
+}
+.footer-content{
+    padding: 20px 0px;
+}
+@-webkit-keyframes changeColors {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+a{
+color: #00b7ff;
+padding-right: 25px;
+}
+.social-icons-header{
+    margin-top: 25px;
+}
+.fa{
+    font-size: 25px;
+}
+.submit{
+    margin-left: 5px;
+    border-radius: 5px;
+}

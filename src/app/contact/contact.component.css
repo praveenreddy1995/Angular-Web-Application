@@ -1,0 +1,53 @@
+.Paddress{
+    margin-left: 15px;
+}
+.contactUs{
+    margin-top: 25px;
+}
+.mainHeading{
+    color:rgb(0, 153, 255);
+    padding: 20px;
+}
+.Pcontact{
+    text-align: left;
+    padding: 4% 20%;
+}
+h5{
+    color: chocolate;
+    margin-bottom: 20px;
+}
+.Enquiry{
+    padding: 3% 0;
+}
+.login-btn {
+    background-color: #288aa5;
+    color:#fff;
+    border-radius: 50px;
+    width: 30%;
+    border: 0;
+}
+.cover-overlay{
+    padding: 0 15%;
+}
+span{
+    color: red;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.error{
+    color: red;
+    font-size: 12px;
+}
+.success{
+    color: blue;
+    font-size: 20px;
+}
+.float-right{
+    text-align: right;
+   
+}
+.commentsBtn button{
+    background-image: linear-gradient(to right, #30c0a5 , #7cadd0);
+    border: 0;
+
+}

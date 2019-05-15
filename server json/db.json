@@ -1,0 +1,62 @@
+{
+  "commentsData": [
+    {
+      "subject": "Regarding Slow server",
+      "name": "praveen",
+      "Email": "superadmin@girmiti.com",
+      "phone": "7893287834",
+      "Comment": "server is very slow",
+      "id": 1
+    }
+  ],
+  "articles": [
+    {
+      "empid": "1",
+      "Fname": "praveen",
+      "Lname": "reddy",
+      "email": "praveen.tharigonda@gmail.com",
+      "phone": "7893287834oui",
+      "id": 1
+    },
+    {
+      "empid": "2",
+      "Fname": "ravi",
+      "Lname": "kumar",
+      "email": "ravi.pidatala@girmiti.com",
+      "phone": "9036531907",
+      "id": 2
+    },
+    {
+      "empid": "45",
+      "Fname": "bhimappa",
+      "Lname": "odiuyar",
+      "email": "bhimu@girmiti.com",
+      "phone": "8073845829",
+      "id": 3
+    },
+    {
+      "empid": "54",
+      "Fname": "PraveenReddy",
+      "Lname": "kumar",
+      "email": "praveen.tharigonda@gmail.com",
+      "phone": "7893287834",
+      "id": 4
+    },
+    {
+      "empid": "85",
+      "Fname": "naveen",
+      "Lname": "rao",
+      "email": "naveen.rao@girmiti.com",
+      "phone": "9177812933",
+      "id": 5
+    },
+    {
+      "empid": "258",
+      "Fname": "vivek",
+      "Lname": "kata",
+      "email": "katamadi@gmail.com",
+      "phone": "7893258741563",
+      "id": 6
+    }
+  ]
+}

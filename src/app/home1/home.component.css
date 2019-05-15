@@ -1,0 +1,33 @@
+.home{
+    margin-top: 30px;
+}
+.firstHomeContant{
+    display: flex;
+    padding-top: 30px;
+}
+.img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.mainHeading{
+    padding-left: 25px;
+    color: rgb(0, 153, 255);
+}
+.navbar-nav li{
+    padding-right: 35px;
+}
+.navbar-brand{
+    color: skyblue;
+    font-size: 30px;
+    font-family: cursive;
+    margin-right: 100px;
+}
+.login_div{
+    margin-left: 50px;
+}
+.carousel{
+    margin-top: 20px;
+}
+.home_contant{
+    margin-top: 50px;
+}

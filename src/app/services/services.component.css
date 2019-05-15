@@ -1,0 +1,39 @@
+.Services_container{
+    margin-top: 50px;
+}
+.services{
+    margin-top: 50px;
+}
+.servicesimg{
+    text-align: center;
+}
+.servicesimg img{
+    cursor: pointer;
+}
+.mainheading{
+    color: rgb(0, 153, 255);
+    margin-bottom: 20px;
+ /* text-align: center; */
+}
+.cards_list{
+    height: 500px;
+    overflow: auto;
+}
+h6{
+    color: cadetblue;
+}
+span{
+    color: chocolate;  
+    padding-left: 10px;
+}
+.butn{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px auto;
+}
+.butn button{
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #30c0a5 , #7cadd0);
+    cursor: pointer;
+}

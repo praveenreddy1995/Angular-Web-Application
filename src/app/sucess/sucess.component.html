@@ -1,0 +1,58 @@
+<div class="container sucess_container" *ngIf="sucessDiv">
+  <h1>Sucessfully LoggedIn</h1>
+  <img src="../../assets/imgs/sucess.jpg" alt="no img">
+
+   <div>
+    <h3>Comments list</h3>
+        <table  class="table table-bordered">
+          <tr><th> Email</th> <th>Subject</th><th>Name</th><th>Phone</th><th>Comments</th><th>Delete</th></tr>
+          <tr *ngFor="let Comments of commentsdata" >
+               <td>{{Comments.subject}}</td> <td>{{Comments.Email}}</td><td>{{Comments.name}}</td> <td>{{Comments.phone}}</td> <td>{{Comments.Comment }}</td>
+          <!-- <td><button type="button" (click)="loadArticleToEdit(Comments.id)">Edit</button>  -->
+              <td><button type="button" (click)="deleteArticle(Comments.id)">Delete</button> </td> 
+          </tr>
+        </table> 
+      </div>
+      <div *ngIf="statusCode; else processing">
+        <div *ngIf="statusCode === 201" [ngClass] = "'success'">
+           Employee data added successfully.
+        </div>   
+        <div *ngIf="statusCode === 409" [ngClass] = "'success'">
+          Employee data already exists.
+        </div>   	
+        <div *ngIf="statusCode === 200" [ngClass] = "'success'">
+          Employee data updated successfully.
+        </div>   	      
+        <div *ngIf="statusCode === 204" [ngClass] = "'success'">
+          Employee data deleted successfully.
+        </div>   	   
+        <div *ngIf="statusCode === 500" [ngClass] = "'error'">
+             Internal Server Error.
+        </div>	
+      </div>
+</div>
+<div class="container" *ngIf="mngmtLoginDiv">
+    <div class="col-sm-4 form-container">
+  <div class="login-box">
+     <label class="col-sm-12 login-text">Admin Login</label>
+     <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
+        <div class="form-group">
+           <label class="">User Name</label><span>*</span>
+           <input class="form-control" type="text" placeholder="Name" required name="Username" formControlName="uname">
+        </div>
+        <div class="form-group">
+           <label class="">Password</label><span>*</span>
+           <input class="form-control" type="password" placeholder="Password"  name="Password" formControlName="passwd">
+        </div>
+        <div id="error"></div>
+        <div class="buttons col-sm-12">
+            <div class="form-group button  col-sm-4">
+                <input   [disabled]="!formdata.valid" value="Submit" class="btn btn-blue form-control login-btn" type="submit" name="Submit">
+            </div>
+          </div>
+     </form>
+  </div>
+  </div>
+</div>
+
+  

@@ -1,0 +1,13 @@
+
+<div class="container Services_container">
+  <h2 class="mainheading">Our Services</h2>
+  <h6>Toady Date :<span>{{todaydate }}</span></h6>
+    <div class="row services" >
+        <div class="col-sm-4 servicesimg"> <img src="../../assets/imgs/Services1.jpg"/></div>
+        <div class="col-sm-4 servicesimg"><img src="../../assets/imgs/Services2.png"/></div>
+        <div class="col-sm-4 servicesimg"><img src="../../assets/imgs/Services1.jpg"/></div>
+
+    </div>
+   <div class="butn"><button (click)="click()">SHOW OUR SERVICES</button> </div>
+   <app-apidata *ngIf="showdiv"></app-apidata>
+</div>  

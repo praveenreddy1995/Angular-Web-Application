@@ -1,0 +1,119 @@
+<div class="container contactUs">
+        <h1>{{message}}</h1>
+  <div class="row" >
+      <div class="col-sm-9">
+          <h2 class=" mainHeading">Our Services </h2>
+      </div>
+        <div class="col-sm-3  commentsBtn">
+            <div class="dropdown float-right">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Click Our Projects
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu projects">
+                      <li *ngFor = "let i of Projects" ><a href="#">{{i}}</a></li>
+                    </ul>
+            </div>
+      </div> 
+      
+  </div>
+   <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+            <li data-target="#carousel-example-2" data-slide-to="3"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="view">
+                    <img class="d-block w-100" src="../../assets/imgs/concelting.png" alt="First slide">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Consulting Services</h3>
+                    <p>Business Consulting,Technology Services etc </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100" src="../../assets/imgs/telecome.png " alt="Second slide">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Telecome Services</h3>
+                    <p>IoT,Top Up,Payment Interfaces etc</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100 banking" src="../../assets/imgs/OnlineBanking.png" alt="Third slide">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Banking Services</h3>
+                    <p>Wallet, card</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100" src="../../assets/imgs/security-testing.png" alt="fourth slide">
+                        <div class="mask rgba-black-light"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Testing Services</h3>
+                        <p>Manual Testing,Automation Testing</p>
+                    </div>
+                </div>
+             
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+      <!--/.Carousel Wrapper-->
+
+      <h3 class="serviceHeading">More About Of Our Services</h3>
+      <div class="row">
+          <div class="col-sm-12 row services">
+                <div class="col-sm-3">
+                    <img src="../../assets/imgs/testing.png" alt="no">
+                    <h4>Testing Services</h4>
+                    <p> Provides a rigorous testing environment for functionalities of each module from Requirement Analysis, 
+                        development to deployment stage and beyond.</p><a href="http://girmiti.com/testing.html">Read more.....</a>
+
+                </div>
+                <div class="col-sm-3">
+                        <img src="../../assets/imgs/bankIcon.png" alt="no">
+                        <h4>Banking Services</h4>
+                        <p> Provides a rigorous testing environment for functionalities of each module from Requirement Analysis, 
+                            development to deployment stage and beyond.</p><a href="http://girmiti.com/testing.html">Read more.....</a>
+                </div>
+                <div class="col-sm-3">
+                        <img src="../../assets/imgs/consulting.png" alt="no">
+                        <h4>Consulting Services</h4>
+                        <p> provides a variety of business services that enable efficiency, increase performance and drive innovation to help organizations 
+                            meet their business goals.</p><a href="http://girmiti.com/testing.html">Read more.....</a>
+                </div>
+                <div class="col-sm-3">
+                        <img src="../../assets/imgs/telecomeIcon.png" alt="no">
+                        <h4>Telecome Services</h4>
+                        <p> Provides a rigorous testing environment for functionalities of each module from Requirement Analysis, 
+                            development to deployment stage and beyond.</p><a href="http://girmiti.com/testing.html">Read more.....</a>
+                </div>
+          </div>
+      </div>
+  </div>

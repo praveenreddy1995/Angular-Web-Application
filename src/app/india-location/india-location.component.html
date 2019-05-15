@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row col-sm-12">
+    <div class="col-sm-4 side-contant">
+   <tree-root  [nodes]="Locationdata" [options]="options"></tree-root>
+</div>
+<div class="col-sm-8 ">
+        <div class=" welcomeimg"> <img src="../../assets/imgs/index.png"/></div>
+        <!-- <h1>{{title}}</h1> -->
+        <div class="butn"><button (click)="click()">Click Employee  data list</button> </div>
+        <div class="cards_list" *ngIf="showdiv">
+                <table class="table table-bordered" >
+                  <thead>
+                    <tr>
+                      <th>EmpID</th>
+                      <th>FirstName</th>
+                      <th>LastName</th>
+                      <th>Email</th>
+                      <th>Mobile No</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let data3 of EmployeeData">
+                        <td>{{data3.empid}}</td>
+                        <td>{{data3.Fname}}</td>
+                        <td>{{data3.Lname }}</td>
+                        <td>{{data3.email }}</td>
+                        <td>{{data3.phone }}</td>
+                    </tr>
+                </tbody>
+                </table>
+              </div>
+    </div>
+</div>
+</div> 

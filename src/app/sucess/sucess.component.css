@@ -1,0 +1,127 @@
+h1{
+    color:rgb(27, 110, 235);
+}
+.sucess_container{
+    margin-top: 50px;
+    text-align: center;
+
+}
+.login-btn {
+    background-color: #288aa5;
+    color:#fff;
+    border-radius: 50px;
+    width: 100%;
+}
+.form-container{
+    margin: 0 auto;
+    float: none; 
+    padding: 50px 0px 50px;  
+}
+.team_container{
+    border-right: 2px solid;
+    padding: 50px 0px 50px;
+ 
+}
+.login-text {
+    text-align: center; 
+    font-size: 25px;
+    color: darksalmon;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.login-container{
+    margin-top:3%;
+    background-color: #fafcfb;
+    width: 50%;
+}
+.buttons{
+    display: flex;
+    padding: 0;
+}
+.button{
+    padding: 0;
+}
+.datatable th{
+    color: blue;
+    font-family: bo;
+    font-weight: 500;
+    font-size: 16px;
+}
+span{
+    color: red;
+    font-size: 15px;
+    padding-left: 5px;
+}
+p{
+    color: #1a1b1b;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.alert-danger{
+    padding: 0px;
+    font-size: 12px;
+    background: none;
+    border: none;
+    color: red;
+}
+.servicesimg img{
+width: 100px;
+height: 100px;
+}
+.servicesimg {
+    text-align: center;
+}
+.photo_container {
+    width: 150px;
+    height: 150px;
+    border-radius: 120px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid #72b2c4;
+    padding: 21px 10px 0 20px;
+}
+.photo-main-container {
+    margin-bottom: 30px;
+}
+.founder-left {
+    margin-left: 44px;
+}
+.founder-right {
+    margin-left: -88px;
+}
+.photo-main-container h4 {
+    text-align: center;
+}
+h4{
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #9145cf;;
+    font-size: 15px;
+}
+.error{
+    color: red;
+    font-size: 12px;
+}
+.success{
+    color: blue;
+}
+.gobackBTN{
+    margin-left: 20px;
+}
+.btn{
+    background-color: #288aa5;
+    border-radius: 50px;
+    border:none;
+}
+.divlogin{
+    height: 30vh;
+  padding: 100px;
+  text-align: center;
+}
+.divlogin span{
+    color: blue;
+    font-size: 20px;
+    cursor: pointer;
+}

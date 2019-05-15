@@ -1,0 +1,111 @@
+
+  <div class="container ">
+      <div class="login-container">
+         <div class="col-sm-4 form-container">
+            <div class="login-box">
+               <label class="col-sm-12 login-text">Register</label>
+               <form [formGroup]="angForm" (ngSubmit) = "onClickSubmit1(angForm.value)" >
+                  <div class="form-group">
+                     <label class="">First Name</label><span>*</span>
+                     <input class="form-control" type="text" placeholder="First Name" required name="Username" formControlName="Fname" >
+                  </div>
+                     <div *ngIf="angForm.controls['Fname'].invalid && (angForm.controls['Fname'].dirty || angForm.controls['Fname'].touched)" class="alert alert-danger">
+                        <div *ngIf="angForm.controls['Fname'].errors.required">
+                         First Name is required.
+                        </div>
+                     </div>
+                  <div class="form-group">
+                      <label class="">Last Name</label><span>*</span>
+                      <input class="form-control" type="text" placeholder="Last Name" required name="Username" formControlName="Lname">
+                   </div>
+                   <div *ngIf="angForm.controls['Lname'].invalid && (angForm.controls['Lname'].dirty || angForm.controls['Lname'].touched)" class="alert alert-danger">
+                        <div *ngIf="angForm.controls['Lname'].errors.required">
+                       Last Name is required.
+                        </div>
+                     </div>
+                   <div class="form-group">
+                      <label class="">Email</label><span>*</span>
+                      <input class="form-control" type="email" placeholder="Email" required name="Username" formControlName="email">
+                   </div> 
+                   <!-- <div class="alert alert-danger"
+                     *ngIf="angForm.controls.email.errors?.MatchPassword">please fill the valid email address</div> -->
+                    <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alert alert-danger">
+                        <div *ngIf="angForm.controls['email'].errors.pattern">
+                     Please fill the valid email address
+                        </div>
+                     </div> 
+
+                   <div class="form-group">
+                      <label class="">Phone</label><span>*</span>
+                      <input class="form-control" type="text" placeholder="Phone" required name="Username" formControlName="phone">
+                   </div>
+                   <div *ngIf="angForm.controls['phone'].invalid && (angForm.controls['phone'].dirty || angForm.controls['phone'].touched)" class="alert alert-danger">
+                        <div *ngIf="angForm.controls['phone'].errors.required">
+                     Phone number is required.
+                        </div>
+                     </div>
+                  <div class="form-group">
+                     <label class="">Password</label><span>*</span>
+                     <input class="form-control" type="password" placeholder="Password"  name="Password" formControlName="pass">
+                  </div>
+                  <div class="form-group">
+                      <label class=""> Confirm Password</label><span>*</span>
+                      <input class="form-control" type="password" placeholder="Confirm Password"  name="conf-password"  formControlName="conpass">
+                   </div>
+                   <div class="alert alert-danger"
+                     *ngIf="angForm.controls.conpass.errors?.MatchPassword">Password not match</div>
+                  <div class="form-group  ">
+                      <label class=" ">
+                        <p (click)="login()" ><i class="fa fa-heart" aria-hidden="true"></i>
+                          Already Member</p>
+                      </label>
+                    </div>
+                    <div class="buttons col-sm-12">
+                  <div class="form-group button  col-sm-4">
+                      <input   [disabled]="!angForm.valid" value="Submit" class="btn btn-blue form-control login-btn" type="submit" name="Submit">
+                  </div>
+                </div>
+               </form>
+            </div>
+         </div>
+        </div>
+   </div> 
+
+
+
+
+
+
+
+   <!-- <div class="container">
+    <h1>
+      Welcome to {{title}}!!
+    </h1>
+    <form [formGroup]="angForm" novalidate (ngSubmit) = "onClickSubmit1(angForm.value)">
+          <div class="form-group">
+              <label>Name:</label>
+              <input class="form-control" formControlName="name" type="text">
+          </div>
+          <div *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)" class="alert alert-danger">
+              <div *ngIf="angForm.controls['name'].errors.required">
+                Name is required.
+              </div>
+          </div>
+           <div class="form-group">
+              <label>Email:</label>
+              <input class="form-control" formControlName="email" type="text">
+          </div>
+          <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alert alert-danger">
+              <div *ngIf="angForm.controls['email'].errors.required">
+                email is required.
+              </div>
+          </div>
+          <button type="submit"
+              [disabled]="angForm.pristine || angForm.invalid" class="btn btn-success">
+              Save
+          </button>
+    </form>
+    <br />
+     <p>Form value: {{ angForm.value | json }}</p>
+    <p>Form status: {{ angForm.status | json }}</p> 
+  </div> -->

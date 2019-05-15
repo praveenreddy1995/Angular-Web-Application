@@ -1,0 +1,21 @@
+{
+  "CommentsData": [
+    {
+      "empid": "1",
+      "Fname": "praveen",
+      "Lname": "reddy",
+      "email": "praveen.tharigonda@gmail.com",
+      "phone": "7893287834",
+      "id": 1
+    },
+    {
+      "subject": "test",
+      "name": "praveen",
+      "email": "superadmin@girmi.com",
+      "phone": "7893287834",
+      "Comment": "hii hru",
+      "id": 2
+    }
+  ]
+  
+}

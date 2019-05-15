@@ -1,0 +1,98 @@
+<div class="container contactUs">
+  <div class="row" >
+      <div class="col-sm-6">
+          <h2 class=" mainHeading">Contact Us</h2>
+      </div>
+      <div class="col-sm-6 float-right commentsBtn">
+          <button  (click)="showComments()" class="btn btn-primary">Show Commentes</button>  
+      </div>
+      
+  </div>
+     
+  <div class="row">
+       <div class="col-sm-8  add">
+        <div class="Pcontact">
+          <h5>Permanent Address</h5>
+          <div >
+            <p class="Paddress">
+                Jaravari Palli(vi),<br>
+                Kurmoi(p),<br>
+                Palamaner(M),<br>
+                Chittoor(dt),<br>
+                Andhra Pradesh-517408.
+            </p>
+          </div>
+          </div>
+          <div class="cover-overlay">
+            <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=kurmai+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google map generator</a></iframe></div>
+      
+     </div> 
+     <div class="col-sm-4 Enquiry">
+        <div class="col-sm-12 form-container">
+            <div class="login-box">
+                <h5>Enquiry Form</h5>
+               <form [formGroup]="CommentsForm"  (ngSubmit) = "onClickSubmits(CommentsForm.value)" >
+                  <div class="form-group">
+                     <label class="">Email</label><span>*</span>
+                     <input class="form-control" type="email"  required name="Username" formControlName="Email">
+                     <label *ngIf="CommentsForm.get('Email').invalid && processValidation" [ngClass] = "'error'"> Email required </label>
+                  </div>
+                  <div class="form-group">
+                     <label class="">Subject</label><span>*</span>
+                     <input class="form-control" type="text"   name="subject" formControlName="subject">
+                     <label *ngIf="CommentsForm.get('subject').invalid && processValidation" [ngClass] = "'error'"> Subject required </label>
+
+                  </div>
+                  <div class="form-group">
+                      <label class="">Name</label><span>*</span>
+                      <input class="form-control" type="text"   name="name" formControlName="name">
+                     <label *ngIf="CommentsForm.get('name').invalid && processValidation" [ngClass] = "'error'"> Name required </label>
+
+                   </div>
+                   <div class="form-group">
+                      <label class="">Phone</label><span>*</span>
+                      <input class="form-control" type="text"   name="phone" formControlName="phone">
+                     <label *ngIf="CommentsForm.get('phone').invalid && processValidation" [ngClass] = "'error'"> Phone number required </label>
+
+                   </div>
+                   <div class="form-group">
+                      <label class="">Comments</label>
+                      <input class="form-control" placeholder="Comments:" formControlName="Comment">
+                   </div>
+                  <div class="form-group form-check ">
+                      <label class="form-check-label ">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                      </label>
+                    </div>
+                    <div class="buttons col-sm-12">
+                      <button *ngIf="!articleIdToUpdate" type="submit" class="btn btn-primary login-btn">CREATE</button>  
+                      <button *ngIf="articleIdToUpdate" type="submit" class="btn btn-primary">UPDATE</button>  
+                      <button (click)="backToCreateArticle()" *ngIf="articleIdToUpdate" type="submit" class="btn btn-primary gobackBTN">Go Back</button>  
+                </div>
+               </form><br/>
+               <div *ngIf="statusCode; else processing">
+                <div *ngIf="statusCode === 201" [ngClass] = "'success'">
+                   Employee data added successfully.
+                </div>   
+                <div *ngIf="statusCode === 409" [ngClass] = "'success'">
+                  Employee data already exists.
+                </div>   	
+                <div *ngIf="statusCode === 200" [ngClass] = "'success'">
+                  Employee data updated successfully.
+                </div>   	      
+                <div *ngIf="statusCode === 204" [ngClass] = "'success'">
+                  Employee data deleted successfully.
+                </div>   	   
+                <div *ngIf="statusCode === 500" [ngClass] = "'error'">
+                     Internal Server Error.
+                </div>	
+              </div>
+              <ng-template #processing>
+                <img *ngIf="requestProcessing" src="../../assets/imgs/loading.jpg">
+               </ng-template>
+            </div>
+         </div>
+       
+     </div>
+  </div>
+</div>

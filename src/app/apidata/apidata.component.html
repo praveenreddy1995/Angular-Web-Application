@@ -1,0 +1,29 @@
+<div class="container Services_container">
+<div class="cards_list">
+    <table class="table table-bordered" >
+      <thead>
+        <tr>
+          
+            <th>Id</th>
+            <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>company</th>
+          <th>Website</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data3 of data">
+            <td>{{data3.id}}</td>
+            <td>{{data3.name}}</td>
+            <td>{{data3.email}}</td>
+            <td>{{data3.phone}}</td>
+            <td>{{data3.company.name}}</td>
+            <td><a href="#">{{data3.website}}</a></td>
+        </tr>
+    </tbody>
+    </table>
+   
+     
+  </div>
+  </div>
