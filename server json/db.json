@@ -7,6 +7,30 @@
       "phone": "7893287834",
       "Comment": "server is very slow",
       "id": 1
+    },
+    {
+      "subject": "test",
+      "name": "praveen ",
+      "Email": "praveen@gmail.com",
+      "phone": "7893254785212",
+      "Comment": "hii we r testers",
+      "id": 2
+    },
+    {
+      "subject": "Regarding Slow server",
+      "name": "praveen",
+      "Email": "superadmin@girmiti.com",
+      "phone": "7893287834",
+      "Comment": "server is very slow",
+      "id": 3
+    },
+    {
+      "subject": "Regarding Slow server",
+      "name": "praveen",
+      "Email": "superadmin@girmiti.com",
+      "phone": "7893287834",
+      "Comment": "server is very slow",
+      "id": 4
     }
   ],
   "articles": [
@@ -49,14 +73,6 @@
       "email": "naveen.rao@girmiti.com",
       "phone": "9177812933",
       "id": 5
-    },
-    {
-      "empid": "258",
-      "Fname": "vivek",
-      "Lname": "kata",
-      "email": "katamadi@gmail.com",
-      "phone": "7893258741563",
-      "id": 6
     }
   ]
 }

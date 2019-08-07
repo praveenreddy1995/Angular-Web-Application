@@ -31,11 +31,11 @@ export class UKlocationsComponent implements OnInit {
       }
        createForm() {
         this.employeeForm = this.fb.group({
-            empid: ['',Validators.required],
-            Fname: ['', Validators.required ],
-            Lname: ['', Validators.required ],
-            email: ['', Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")],
-            phone: ['',Validators.required],
+          empid:['',Validators.required],
+           Fname: ['', Validators.required ],
+          Lname: ['', Validators.required ],
+           email: ['', Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")],
+           phone: ['',Validators.required],
         });
       }
       onClickSubmit(data) {

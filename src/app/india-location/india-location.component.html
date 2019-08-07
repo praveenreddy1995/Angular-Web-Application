@@ -1,34 +1,49 @@
-<div class="container">
-    <div class="row col-sm-12">
-    <div class="col-sm-4 side-contant">
-   <tree-root  [nodes]="Locationdata" [options]="options"></tree-root>
-</div>
-<div class="col-sm-8 ">
-        <div class=" welcomeimg"> <img src="../../assets/imgs/index.png"/></div>
-        <!-- <h1>{{title}}</h1> -->
-        <div class="butn"><button (click)="click()">Click Employee  data list</button> </div>
-        <div class="cards_list" *ngIf="showdiv">
-                <table class="table table-bordered" >
-                  <thead>
-                    <tr>
-                      <th>EmpID</th>
-                      <th>FirstName</th>
-                      <th>LastName</th>
-                      <th>Email</th>
-                      <th>Mobile No</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr *ngFor="let data3 of EmployeeData">
-                        <td>{{data3.empid}}</td>
-                        <td>{{data3.Fname}}</td>
-                        <td>{{data3.Lname }}</td>
-                        <td>{{data3.email }}</td>
-                        <td>{{data3.phone }}</td>
-                    </tr>
-                </tbody>
-                </table>
-              </div>
+<div class="project_container">
+  <div class="row main_container">
+    <div class="col-sm-12 select">
+        <select class="mdb-select blue-gradient">
+            <option value="" disabled selected> Select Admin Services</option>
+            <option value="1">Employee Data </option>
+            <option value="2">Subscribed Customers</option>
+            <option value="3">Booking Detailes</option>
+          </select>
     </div>
+      
+      <div class="col-sm-12">
+          <h2 class=" mainHeading">Employee Data </h2>
+      </div>
+    <div class="col-sm-4">
+      <!-- <tree-root [nodes]="Locationdata" [options]="options"></tree-root> -->
+    </div>
+    <div class="col-sm-12 ">
+      <!-- <div class=" welcomeimg"> <img src="../../assets/imgs/index.png"/></div> -->
+      <!-- <h1>{{title}}</h1> -->
+      <!-- <div class="butn"><button (click)="click()">Click Employee data list</button> </div> -->
+      <div class="cards_list" *ngIf="showdiv">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>EmpID</th>
+              <th>FirstName</th>
+              <th>LastName</th>
+              <th>Email</th>
+              <th>Mobile No</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data3 of EmployeeData">
+              <td>{{data3.empid}}</td>
+              <td>{{data3.Fname}}</td>
+              <td>{{data3.Lname }}</td>
+              <td>{{data3.email }}</td>
+              <td>{{data3.phone }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+
+    </div>
+  </div>
 </div>
-</div> 

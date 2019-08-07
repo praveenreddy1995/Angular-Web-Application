@@ -13,7 +13,7 @@ import { CommentsData } from './Artical';
 
 export class CommentService {
     //URL for CRUD operations
-    articleUrl = "http://localhost:3000/commentsData";
+    articleUrl = "https://angularjson.herokuapp.com/commentsData";
     //Create constructor to get Http instance
     constructor(private http:Http, private fb: FormBuilder, private router: Router) { 
     }

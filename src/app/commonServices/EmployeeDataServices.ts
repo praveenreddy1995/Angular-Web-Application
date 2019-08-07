@@ -13,7 +13,7 @@ import { Article } from './Artical';
 
 export class ArticleService {
     //URL for CRUD operations
-    articleUrl = "http://localhost:3000/articles";
+    articleUrl = "https://angularjson.herokuapp.com/articles";
     //Create constructor to get Http instance
     constructor(private http:Http, private fb: FormBuilder, private router: Router) { 
     }

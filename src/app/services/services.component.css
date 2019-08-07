@@ -1,8 +1,5 @@
 .Services_container{
-    margin-top: 50px;
-}
-.services{
-    margin-top: 50px;
+    margin-top: 15%;
 }
 .servicesimg{
     text-align: center;
@@ -15,10 +12,6 @@
     margin-bottom: 20px;
  /* text-align: center; */
 }
-.cards_list{
-    height: 500px;
-    overflow: auto;
-}
 h6{
     color: cadetblue;
 }
@@ -26,14 +19,17 @@ span{
     color: chocolate;  
     padding-left: 10px;
 }
-.butn{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 30px auto;
+.store_container{
+    margin-bottom: 20px;
 }
-.butn button{
-    border-radius: 5px;
-    padding: 10px 20px;
-    background-image: linear-gradient(to right, #30c0a5 , #7cadd0);
-    cursor: pointer;
+.box_shadow{
+    box-shadow: 0px 16px 12px -18px #c3bcbc;
+    margin: 0 ;   
+}
+.Search_container{
+    padding: 0;
+    margin-top: 35px;
+}
+.modal {
+    z-index: 5555;
 }

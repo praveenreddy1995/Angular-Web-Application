@@ -1,12 +1,12 @@
 .gallery_container{
-    margin-top: 50px;
+    margin-top: 15%;
 }
 .imgsrow{
     margin-bottom: 30px;
     display:flex;
 }
 .mainHeading{
-    padding-left: 25px;
+    padding: 0;
     color: rgb(0, 153, 255);
     margin-bottom: 20px;
 }

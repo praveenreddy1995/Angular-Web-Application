@@ -2,14 +2,15 @@ h1{
     color:rgb(27, 110, 235);
 }
 .sucess_container{
-    margin-top: 50px;
+    margin-top: 15%;
     text-align: center;
-
+}
+.mngmtLoginDiv{
+    margin-top: 10%;
 }
 .login-btn {
     background-color: #288aa5;
     color:#fff;
-    border-radius: 50px;
     width: 100%;
 }
 .form-container{
@@ -111,9 +112,8 @@ h4{
     margin-left: 20px;
 }
 .btn{
-    background-color: #288aa5;
-    border-radius: 50px;
-    border:none;
+    border: none;
+    margin: 0;
 }
 .divlogin{
     height: 30vh;

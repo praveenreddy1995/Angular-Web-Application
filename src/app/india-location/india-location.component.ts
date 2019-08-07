@@ -9,7 +9,7 @@ import{GetEmployeeData} from '../commonServices/getEmployeedataService';
   styleUrls: ['./india-location.component.css']
 })
 export class IndiaLocationComponent implements OnInit {
-  showdiv:boolean=false;
+  showdiv:boolean=true;
   title= "Welcome to Girmiti Software...";
   Locationdata:any={};
   EmployeeData:any={};

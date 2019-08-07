@@ -6,11 +6,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpModule} from "@angular/http";
 import { NgxGalleryModule } from 'ngx-gallery';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home1/home.component';
+import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { GallaryComponent } from './gallary/gallary.component';
 import { ContactComponent } from './contact/contact.component';
-import { LoginComponent } from './login1/login.component';
+import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -26,8 +26,7 @@ import { ApidataComponent } from './apidata/apidata.component';
 import { IndiaLocationComponent } from './india-location/india-location.component';
 import { USlocationsComponent } from './uslocations/uslocations.component';
 import { UKlocationsComponent } from './uklocations/uklocations.component';
-import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
-
+import { SubscribeService } from './commonServices/subscribemembers';
 
 @NgModule({
   declarations: [
@@ -45,7 +44,6 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
     IndiaLocationComponent,
     USlocationsComponent,
     UKlocationsComponent,
-    LifecycleHooksComponent
     
   ],
   imports: [
@@ -65,12 +63,11 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
       { path: 'sucess', component: SucessComponent},
       { path: 'Employee', component: IndiaLocationComponent},
       { path: 'Project', component: USlocationsComponent},
-      { path: 'Managment', component: UKlocationsComponent},
-      { path: 'Lifecycle', component: LifecycleHooksComponent}
+      { path: 'Managment', component: UKlocationsComponent}
 
    ])
   ],
-  providers: [Apidata,HttpAPI,IndiaData,ArticleService,GetEmployeeData,CommentService,GetComments],
+  providers: [Apidata,HttpAPI,IndiaData,ArticleService,GetEmployeeData,CommentService,GetComments,SubscribeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

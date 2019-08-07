@@ -1,0 +1,31 @@
+
+  <div class="container login-container">
+      <div class="row">
+         <div class="col-sm-4 form-container">
+            <div class="login-box">
+               <label class="col-sm-12 login-text">LOGIN</label>
+               <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
+                  <div class="form-group">
+                     <label class="">User Name</label><span>*</span>
+                     <input class="form-control" type="text" placeholder="Name" required name="Username" formControlName="uname">
+                  </div>
+                  <div class="form-group">
+                     <label class="">Password</label><span>*</span>
+                     <input class="form-control" type="password" placeholder="Password"  name="Password" formControlName="passwd">
+                  </div>
+                  <div id="error"></div>
+                  <div class="form-group  ">
+                    <label class=" ">
+                      <p  (click)="login()" ><i class="fa fa-heart" aria-hidden="true"></i>
+                        New User</p>
+                    </label>
+                  </div>
+                  <div class="form-group button">
+                     <input [disabled]="!formdata.valid"  value="Submit" class="btn btn-primary form-control login-btn" type="submit" name="Submit">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+  

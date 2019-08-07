@@ -10,7 +10,7 @@ export class IndiaData  {
               { id: 2, name: 'India', children:[
               {
                 id:3,name:"states",children:[
-                  {id:4, name:"Andhra Pradesh", href: 'www.girmiti.com'},
+                  {id:4, name:"Andhra Pradesh", href: '../login/login.component.html'},
                   {id:5, name:"Arunachal Pradesh", href: 'logout'},
                   {id:6, name:"Assam"},
                   {id:7, name:"Bihar"},
@@ -74,7 +74,7 @@ export class IndiaData  {
           }
         ];
         options = {
-        //  treeNodeTemplate: '<a *ngIf="node.data.href" href="node.data.href">{{ node.data.name }}</a> <span *ngIf="!node.data.href">{{ node.data.name }}</span>'
+          treeNodeTemplate: '<a *ngIf="node.data.href" href="node.data.href">{{ node.data.name }}</a> <span *ngIf="!node.data.href">{{ node.data.name }}</span>'
           }
           
         

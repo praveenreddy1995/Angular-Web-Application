@@ -1,7 +1,6 @@
 .login-btn {
     background-color: #288aa5;
     color:#fff;
-    border-radius: 50px;
     width: 100%;
 }
 .form-container{
@@ -18,7 +17,7 @@
 }
 .login-container{
     background-color: #fafcfb;
-    width: 100%;
+    margin-top: 10%;
 }
 .buttons{
     display: flex;

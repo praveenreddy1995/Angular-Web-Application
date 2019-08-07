@@ -2,7 +2,7 @@
     margin-left: 15px;
 }
 .contactUs{
-    margin-top: 25px;
+    margin-top: 15%;
 }
 .mainHeading{
     color:rgb(0, 153, 255);
@@ -20,11 +20,11 @@ h5{
     padding: 3% 0;
 }
 .login-btn {
-    background-color: #288aa5;
     color:#fff;
-    border-radius: 50px;
-    width: 30%;
-    border: 0;
+    margin: 0;
+}
+.buttons {
+    padding: 0;
 }
 .cover-overlay{
     padding: 0 15%;

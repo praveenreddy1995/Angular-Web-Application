@@ -7,7 +7,7 @@ import 'rxjs/add/observable/throw';
   @Injectable()
   export class GetComments {
     title="Api Works";
-    private apiurl="http://localhost:3000/commentsData";
+    private apiurl="https://angularjson.herokuapp.com/commentsData";
     data:any={};
     constructor( private http:Http) { 
       console.log('Api getting called'); 

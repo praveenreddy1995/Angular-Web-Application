@@ -7,7 +7,7 @@ import 'rxjs/add/observable/throw';
 @Injectable()
 export class GetEmployeeData {
     title="Api Works";
-    private apiurl="http://localhost:3000/articles";
+    private apiurl="https://angularjson.herokuapp.com/articles";
     data:any={};
     constructor( private http:Http) { 
       console.log('Api getting called'); 

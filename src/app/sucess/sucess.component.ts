@@ -43,7 +43,7 @@ export class SucessComponent implements OnInit {
     }
   
   onClickSubmit(data) {
-    if (data.uname=="superadmin" && data.passwd=="Girmiti@1234") {
+    if (data.uname=="superadmin" && data.passwd=="Praveen@1234") {
       this.sucessDiv=true;
       this.mngmtLoginDiv=false;
        

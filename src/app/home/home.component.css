@@ -1,0 +1,38 @@
+
+.firstHomeContant{
+    display: flex;
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+.img img{
+    width: 60%;
+    border-radius: 50px;
+}
+.mainHeading{
+    padding-left: 25px;
+    color: rgb(0, 153, 255);
+}
+.navbar-nav li{
+    padding-right: 35px;
+}
+.navbar-brand{
+    color: skyblue;
+    font-size: 30px;
+    font-family: cursive;
+    margin-right: 100px;
+}
+.login_div{
+    margin-left: 50px;
+}
+.home_contant{
+    margin-top: 50px;
+}
+.carousel-inner{
+    height: auto;
+}
+.img-fluid{
+    width: 100%;
+}
+.heading{
+    color:#668a17ad;
+}

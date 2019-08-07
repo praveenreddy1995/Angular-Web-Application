@@ -1,6 +1,6 @@
 .side-contant{
     background: #77ceeb;
-    height: auto;
+    height: 500px;
 }
 .welcomeimg img{
   width: 50%;
@@ -19,6 +19,23 @@
 }
 .cards_list{
   margin-top: 20px;
-  height: 400px;
+  height: auto;
   overflow: auto;
+}
+.main_container{
+  margin: 0;
+}
+.project_container{
+  margin-top: 15%;
+}
+.mainHeading{
+  color:rgb(126, 146, 33);
+}
+.mdb-select{
+  padding: 6px;
+  border-color: #4285f4;
+  color: #ffc107;
+}
+.select{
+  text-align: right;
 }

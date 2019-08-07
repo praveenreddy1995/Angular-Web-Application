@@ -4,7 +4,7 @@
           <h2 class=" mainHeading">Contact Us</h2>
       </div>
       <div class="col-sm-6 float-right commentsBtn">
-          <button  (click)="showComments()" class="btn btn-primary">Show Commentes</button>  
+          <button  (click)="showComments()" class="btn blue-gradient">Show Commentes</button>  
       </div>
       
   </div>
@@ -31,7 +31,7 @@
         <div class="col-sm-12 form-container">
             <div class="login-box">
                 <h5>Enquiry Form</h5>
-               <form [formGroup]="CommentsForm"  (ngSubmit) = "onClickSubmits(CommentsForm.value)" >
+               <form [formGroup]="CommentsForm" (ngSubmit) = "onClickSubmits(CommentsForm.value)" >
                   <div class="form-group">
                      <label class="">Email</label><span>*</span>
                      <input class="form-control" type="email"  required name="Username" formControlName="Email">
