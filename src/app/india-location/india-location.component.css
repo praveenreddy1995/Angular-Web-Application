@@ -39,3 +39,16 @@
 .select{
   text-align: right;
 }
+@media (max-width: 575px) {
+  .select{
+    text-align: center;
+  }
+  .project_container{
+      margin-top: 240px;
+  }
+  .mainHeading{
+    margin-top: 22px;
+    font-size: 25px;
+    text-align: center;
+  }
+}

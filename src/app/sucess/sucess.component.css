@@ -6,7 +6,7 @@ h1{
     text-align: center;
 }
 .mngmtLoginDiv{
-    margin-top: 10%;
+    margin-top: 15%;
 }
 .login-btn {
     background-color: #288aa5;
@@ -16,7 +16,6 @@ h1{
 .form-container{
     margin: 0 auto;
     float: none; 
-    padding: 50px 0px 50px;  
 }
 .team_container{
     border-right: 2px solid;
@@ -26,7 +25,7 @@ h1{
 .login-text {
     text-align: center; 
     font-size: 25px;
-    color: darksalmon;
+    color: #919c09;
     margin-bottom: 30px;
     font-weight: 500;
 }
@@ -125,3 +124,13 @@ h4{
     font-size: 20px;
     cursor: pointer;
 }
+.cards_list{
+    margin-top: 20px;
+    height: auto;
+    overflow: auto;
+  }
+@media (max-width: 575px) {
+    .mngmtLoginDiv, .sucess_container{
+        margin-top: 240px;
+    }
+  }

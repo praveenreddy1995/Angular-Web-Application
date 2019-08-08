@@ -1,12 +1,18 @@
 .login-btn {
     background-color: #288aa5;
     color:#fff;
-    width: 40%;
+    width: 100%;
+}
+.buttons{
+    display: flex;
+    padding: 0;
+}
+.button{
+    padding: 0;
 }
 .form-container{
     margin: 0 auto;
      float: none; 
-     padding: 50px 0px 50px 50px;  
 }
 .login-text {
     text-align: center; 
@@ -29,4 +35,12 @@ p{
     color: #0ba0dc;
     cursor: pointer;
     margin-bottom: 0;
+}
+@media (max-width: 575px) {
+    .form-container{
+       padding: 30px;
+    }
+    .login-container{
+        margin-top: 230px;
+    }
 }

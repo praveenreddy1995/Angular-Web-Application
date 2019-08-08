@@ -2,8 +2,8 @@
   <h1>Sucessfully LoggedIn</h1>
   <img src="../../assets/imgs/sucess.jpg" alt="no img">
 
-   <div>
-    <h3>Comments list</h3>
+  <div class="cards_list">
+    <h2 class="font-weight-bold text-center  login-text">Comments list</h2>
         <table  class="table table-bordered">
           <tr><th> Email</th> <th>Subject</th><th>Name</th><th>Phone</th><th>Comments</th><th>Delete</th></tr>
           <tr *ngFor="let Comments of commentsdata" >
@@ -34,7 +34,7 @@
 <div class="container mngmtLoginDiv" *ngIf="mngmtLoginDiv">
     <div class="col-sm-4 form-container">
   <div class="login-box">
-     <label class="col-sm-12 login-text">Admin Login</label>
+    <h2 class="font-weight-bold text-center my-5 login-text">Admin Login</h2>
      <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
         <div class="form-group">
            <label class="">User Name</label><span>*</span>
@@ -46,7 +46,7 @@
         </div>
         <div id="error"></div>
         <div class="buttons col-sm-12">
-            <div class="form-group button  col-sm-4">
+            <div class="form-group button  col-sm-5">
                 <input   [disabled]="!formdata.valid" value="Submit" class="btn btn-blue form-control login-btn" type="submit" name="Submit">
             </div>
           </div>

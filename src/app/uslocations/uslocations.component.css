@@ -2,7 +2,7 @@
     color:rgb(0, 153, 255);
     padding: 20px;
 }
-.float-right{
+.text_aline{
     text-align: right;
 }
 .commentsBtn{
@@ -11,13 +11,10 @@
 .project_container{
     margin-top: 15%;
 }
-.commentsBtn button{
-    background-image: linear-gradient(to right, #30c0a5 , #7cadd0);
-}
 .mainImg{
     text-align: center;
 }
-.w-100 {
+.view img  {
     width: 50%!important;
     margin: 0 auto;
     height: 400px;
@@ -26,10 +23,11 @@
     width: 60%!important;
 }
 .carousel-caption{
-     right: 0; 
+     right: 10px; 
      left: 0; 
     color: #ec3910;
     text-align: right;
+    bottom: -22px;
 }
 .serviceHeading{
     text-align: center;
@@ -56,3 +54,38 @@
 .projects li{
     padding: 5px 0;
 }
+@media (max-width: 575px) {
+    .text_aline{
+      text-align: center !important;
+      margin-bottom: 25px;
+    }
+    .project_container{
+        margin-top: 225px;
+    }
+    .mainHeading{
+      margin-top: 22px;
+      font-size: 25px;
+      text-align: center;
+      color: rgb(125, 132, 38);
+      padding: 5px;
+    }
+    .view img {
+        width: 100%!important;
+        margin: 0 auto;
+        height: 250px;
+    }
+    .carousel-caption{
+        right: 10px; 
+        left: 0; 
+       color: #ec3910;
+       text-align: right;
+       bottom: -22px;
+   }
+   .dropdown-menu.show {
+    display: block;
+    z-index: 5555;
+    height: 300px;
+    margin-top: 200px;
+    overflow: auto;
+}
+  }

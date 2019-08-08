@@ -36,3 +36,9 @@
 .heading{
     color:#668a17ad;
 }
+@media (max-width: 575px) {
+
+    .home{
+        margin-top: 225px;
+    }
+}

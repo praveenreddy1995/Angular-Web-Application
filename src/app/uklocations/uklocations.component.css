@@ -10,7 +10,6 @@
 .form-container{
     margin: 0 auto;
     float: none; 
-    padding: 5px 0px 50px;  
 }
 .team_container{
     border-right: 2px solid;
@@ -26,12 +25,12 @@
     background-color: #fafcfb;
     width: 50%;
 }
-.button{
+.buttons{
     padding: 0;
     width: 100%;
     text-align: right;
 }
-.button input{
+.buttons button{
     margin: 0;
 
 }
@@ -102,5 +101,25 @@ h4{
     color: blue;
 }
 .gobackBTN{
-    margin-left: 20px;
+    margin-left: 20px !important;
 }
+.div_container{
+    margin: 0 auto;
+}
+.cards_list{
+    margin-top: 20px;
+    height: auto;
+    overflow: auto;
+  }
+@media (max-width: 575px) {
+    .form-container{
+      padding: 0;
+    }
+    .Management_container{
+        margin-top: 240px;
+    }
+    .team_container[_ngcontent-c3] {
+        border: 0; 
+         padding: 0;
+    }
+  }

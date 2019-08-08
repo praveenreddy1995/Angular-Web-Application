@@ -1,5 +1,5 @@
  <div class=" Management_container ">
-    <div class="row">
+    <div class="row col-sm-12">
       <div class="col-sm-6 team_container">
           <h2 class="font-weight-bold text-center my-5 login-text">Management Team</h2>
           <div class="col-md-12 mb-4 text-center">
@@ -8,8 +8,8 @@
               <h2 class="my-5 h2">Founder</h2>
           </div>
       </div>
-      <div class="col-sm-4 form-container">
-      <div class="col-sm-8" *ngIf="mngmtLoginDiv">
+      <div class="col-sm-6 form-container">
+      <div class="col-sm-6 div_container " *ngIf="mngmtLoginDiv">
           <div class="login-box">
             <h2 class="font-weight-bold text-center my-5 login-text">Admin Login</h2>
              <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
@@ -29,9 +29,9 @@
           </div>
           <p>Please Login to Update Employee Detailes.....</p>
        </div>
-       <div class="col-sm-12" *ngIf="updateempDiv">
+       <div class="col-sm-6 div_container" *ngIf="updateempDiv">
           <div class="login-box">
-             <label class="col-sm-12 login-text">Update employee data </label>
+             <h2 class="font-weight-bold text-center my-5 login-text">Update employee data </h2>
              <form [formGroup]="employeeForm" (ngSubmit) = "Formsubmit(employeeForm.value)" >
                 <div class="form-group">
                    <label class="">Emp ID</label><span>*</span>
@@ -123,8 +123,8 @@
       
        </div>
       </div>
-      <div *ngIf="showDetailes">
-      <h3>Employee Details</h3>
+      <div *ngIf="showDetailes" class="container cards_list">
+      <h2 class="font-weight-bold text-center my-5 login-text">Employee Details</h2>
       <table  class="table table-bordered">
         <tr><th> Empid</th> <th>FirstName</th><th>LastName</th><th>Phone</th><th>Email</th><th>Edit</th><th>Delete</th></tr>
         <tr *ngFor="let article of allArticles" >

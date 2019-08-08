@@ -3,7 +3,7 @@
       <div class="row">
          <div class="col-sm-4 form-container">
             <div class="login-box">
-               <label class="col-sm-12 login-text">LOGIN</label>
+               <h2 class="font-weight-bold text-center my-5 login-text">LOGIN</h2>
                <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
                   <div class="form-group">
                      <label class="">User Name</label><span>*</span>
@@ -20,9 +20,11 @@
                         New User</p>
                     </label>
                   </div>
-                  <div class="form-group button">
-                     <input [disabled]="!formdata.valid"  value="Submit" class="btn btn-primary form-control login-btn" type="submit" name="Submit">
-                  </div>
+                  <div class="buttons col-sm-12">
+                     <div class="form-group button col-sm-4">
+                        <input [disabled]="!formdata.valid"  value="Submit" class="btn btn-primary form-control login-btn" type="submit" name="Submit">
+                     </div>
+                   </div>
                </form>
             </div>
          </div>
