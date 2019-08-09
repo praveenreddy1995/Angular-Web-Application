@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
 import { Router} from '@angular/router';
 import {Http, Response, Headers, RequestOptions } from "@angular/http";
+import { ResourceLoader } from '@angular/compiler';
 
 @Component({
   selector: 'app-login',
@@ -28,10 +29,11 @@ export class LoginComponent implements OnInit {
    }
    
    onClickSubmit(data) {
-      console.log(data.uname);
+     localStorage.setItem('username', data.uname);
       if (data.uname=="PraveenReddy" && data.passwd=="admin123") {
          alert("Login Successful");
-         this.router.navigate([''])
+         this.router.navigate(['']);
+        
       } else {
          alert("Invalid Login");
          return false;

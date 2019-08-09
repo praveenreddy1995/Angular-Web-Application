@@ -13,3 +13,19 @@
 ngx-gallery{
     margin-right: 50px;
 }
+@media (max-width: 575px) {
+    .gallery_container{
+        margin-top: 240px;
+    }
+    ngx-gallery{
+        margin-right: 0px;
+        width: 100% !important;
+    }
+    .galleryDiv{
+        margin-top: 20px;
+        height: auto;
+        overflow: auto;
+    
+    }
+
+  }

@@ -43,6 +43,7 @@ export class SucessComponent implements OnInit {
     }
   
   onClickSubmit(data) {
+    localStorage.setItem("username",data.uname)
     if (data.uname=="superadmin" && data.passwd=="Praveen@1234") {
       this.sucessDiv=true;
       this.mngmtLoginDiv=false;
@@ -69,7 +70,7 @@ export class SucessComponent implements OnInit {
     this.statusCode = 204;
     this.getAllArticles();	
     this.backToCreateArticle();
-    
+    location.reload();
   },
   errorCode => this.statusCode = errorCode);    
   }

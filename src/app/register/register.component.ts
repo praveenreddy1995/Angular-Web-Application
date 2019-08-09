@@ -33,8 +33,8 @@ export class RegisterComponent {
         this.cutomerdata = [];
          var data1 = JSON.stringify(data); 
           localStorage.setItem('angForm',data1);
-          console.log(this.cutomerdata);
-          this.router.navigate(['sucess']);
+          alert("Register Sucessfully");
+          this.router.navigate(['']);
        }
        login(){
         this.router.navigate(['login']);

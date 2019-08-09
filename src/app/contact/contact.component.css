@@ -51,3 +51,21 @@ span{
     border: 0;
 
 }
+@media (max-width: 575px) {
+    .contactUs{
+        margin-top: 240px;
+    }
+    .cover-overlay{
+        padding: 0;
+    }
+    .mainHeading[_ngcontent-c3] {
+         padding: 0px; 
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .commentsBtn{
+   text-align: center
+    
+    }
+
+  }

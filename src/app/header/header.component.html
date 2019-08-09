@@ -21,7 +21,7 @@
   
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
-        <li  class="nav-item">
+        <li class="nav-item">
             <a routerLink = "" class="nav-link" href="#">Home</a>
         </li>
         <li [routerLinkActive]="['active']" class="nav-item">
@@ -35,7 +35,7 @@
           </li>
   
         <!-- Dropdown -->
-        <li [routerLinkActive]="['active']" class="nav-item dropdown">
+        <li [routerLinkActive]="['active']" class="nav-item dropdown" *ngIf="adminLinks">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">Internal</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
@@ -48,9 +48,12 @@
       </ul>
     
       <ul class="navbar-nav ml-auto ">
-        <li [routerLinkActive]="['active']" class="nav-item">
-          <a routerLink = "login" class="nav-link" href="#">Login</a>
+        <li [routerLinkActive]="['active']" class="nav-item" *ngIf="Login">
+          <a routerLink = "login" class="nav-link loginA" href="#">Login</a>
         </li>
+        <li  class="nav-item" *ngIf="Logout">
+            <a  (click)="logoutclick()" class="nav-link" href="#">Logout</a>
+          </li>
         <li  [routerLinkActive]="['active']" class="nav-item">
           <a   routerLink = "Register" class="nav-link" href="#">Register</a>
         </li>

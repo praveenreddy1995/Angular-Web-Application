@@ -3,7 +3,7 @@
       <div class="col-sm-6">
           <h2 class=" mainHeading">Contact Us</h2>
       </div>
-      <div class="col-sm-6 float-right commentsBtn">
+      <div class="col-sm-6 float-right commentsBtn" *ngIf="CommentsDiv">
           <button  (click)="showComments()" class="btn blue-gradient">Show Commentes</button>  
       </div>
       

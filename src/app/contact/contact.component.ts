@@ -12,6 +12,7 @@ import { CommentsData } from '../commonServices/Artical';
 })
 export class ContactComponent implements OnInit {
   CommentsForm:FormGroup;
+  CommentsDiv:boolean=false;
   allArticles: CommentsData[];
       statusCode: number;
       requestProcessing = false;
@@ -41,6 +42,10 @@ export class ContactComponent implements OnInit {
   //Create ngOnInit() and and load articles
   ngOnInit(): void {
     this.getAllArticles();
+    var username=localStorage.getItem("username");
+    if(username=="PraveenReddy"){
+      this.CommentsDiv=true;
+    }
 }   
 //Fetch all articles
 //Fetch all articles
